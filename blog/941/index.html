@@ -1,1 +1,109 @@
 
+<h1>
+  <span style="--i: 0"><a href="https://aryanpa.tk/blog/941/read/">Launch 9:41 blog</span>
+    </h1>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0s !important;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  font-family: "Gugi", sans-serif;
+  text-align: center;
+  letter-spacing: -0.15vmin;
+  background-color: hsl(200 0% 6%);
+  overflow: hidden;
+}
+
+body::before {
+  --size: 150vmax;
+
+  content: "";
+  grid-area: 1 / 1;
+  width: var(--size);
+  height: var(--size);
+  background: conic-gradient(
+    #1f005c,
+    #700092,
+    #c800a0,
+    #fe005d,
+    #ff4335,
+    #ffb56b
+  );
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+h1 {
+  position: relative;
+  grid-area: 1 / 1;
+}
+
+span {
+  --shadow-offset: 0.25vmin;
+  --shadow-size: 0.2vmin;
+  --delay: -0.33s;
+
+  display: block;
+  color: hsla(0, 0%, 0%, 0.1);
+  background: linear-gradient(
+    -15deg,
+    #4158d0 0%,
+    #4158d0 20%,
+    #c850c0 30%,
+    #ffcc70 50%,
+    #c850c0 70%,
+    #4158d0 80%,
+    #4158d0 100%
+  );
+  background-size: 400% 400%;
+  font-size: clamp(1rem, 15vmin, 7rem);
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shadow 2s calc(var(--i) * var(--delay)) linear infinite,
+    gradient 3s calc(var(--i) * var(--delay)) linear infinite;
+}
+
+@keyframes gradient {
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes shadow {
+  from,
+  to {
+    text-shadow:
+      hsla(0, 0%, 0%, 0.2) var(--shadow-offset) var(--shadow-offset) var(--shadow-size), hsla(0, 0%, 100%, 0.2) calc(var(--shadow-offset) * -1) calc(var(--shadow-offset) * -1) var(--shadow-size);
+  }
+  50% {
+    text-shadow:
+      hsla(0, 0%, 0%, 0) var(--shadow-offset) var(--shadow-offset) var(--shadow-size), hsla(0, 0%, 100%, 0) calc(var(--shadow-offset) * -1) calc(var(--shadow-offset) * -1) var(--shadow-size);
+  }
+}
+    a {text-decoration: none;}
+
+  </style>
