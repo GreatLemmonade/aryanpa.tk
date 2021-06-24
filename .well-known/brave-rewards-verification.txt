@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: aryanpa.tk
+Token: 1af81c501c5fdfc1459bf19cab0d9c12d3870152731764f8c13265de53eb70fd
